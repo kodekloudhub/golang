@@ -81,7 +81,7 @@ Help for the [VSCode editor](https://github.com/kodekloudhub/community-faq/blob/
     
     > 3
 
-    The first line of every `.go` file that is not a blank line or a comment must be a `package` statement to declare the pacakge that the code belongs to.
+    The first line of every `.go` file that is not a blank line or a comment must be a `package` statement to declare the package that the code belongs to.
 
     </details>
     
