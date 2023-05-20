@@ -7,8 +7,17 @@ Help for the [VSCode editor](https://github.com/kodekloudhub/community-faq/blob/
 1.  <details>
     <summary>Where was the Go programming language designed ?</summary>
 
+    * VMware
+    * Facebook
+    * Google
+    * Microsoft
+
+    <details>
+    <summary>Reveal</summary>
+
     > Google
 
+    </details>
     </details>
 
 1.  <details>
@@ -18,11 +27,11 @@ Help for the [VSCode editor](https://github.com/kodekloudhub/community-faq/blob/
     1. For creating web pages easily.
     1. Provide the efficiency and safety of a statically typed, compiled language.
     1. Aimed to be modern, with support for networked and multicore computing.
-    
+
     <details>
     <summary>Reveal</summary>
 
-    1, 3 and 4
+    > A, C, D
 
     Although Go is *not* dynamically typed or interpreted, the language was created with simplicity in mind to make it feel like using a language like Python which is these things.
 
@@ -31,7 +40,7 @@ Help for the [VSCode editor](https://github.com/kodekloudhub/community-faq/blob/
     Compiled languages with static types provide safety - many bugs are caught by the compiler before you even get to run the program. Static typing provides efficiency because dynamic typing requires much more work behind the scenes (runs slower as a result).
 
     Go has support built into the language itself for multicore computing such as "channels". You will learn about these in the Advanced Golang course. It also has great package support for networking - it's simple to construct API servers.
-    
+
     </details>
 
     </details>
@@ -39,16 +48,15 @@ Help for the [VSCode editor](https://github.com/kodekloudhub/community-faq/blob/
 1.  <details>
     <summary>Go is a...</summary>
 
-    1. compiled langauge
-    2. interpreted language
+    * compiled language
+    * interpreted language
 
     <details>
     <summary>Reveal</summary>
-    
-    > 1
-    
+
+    > compiled language
+
     </details>
-    
     </details>
 
 1.  <details>
@@ -61,30 +69,28 @@ Help for the [VSCode editor](https://github.com/kodekloudhub/community-faq/blob/
 
     <details>
     <summary>Reveal</summary>
-    
-    > 3
-    
+
+    > C
+
     </details>
-    
     </details>
 
 1.  <details>
     <summary>In a Go program, where are packages declared ?</summary>
 
-    1. At the start of the program
-    1. After the import statment
-    1. At the end of the program
-    1. Anywhere in the code.
+    * At the start of the program
+    * After the import staetment
+    * At the end of the program
+    * Anywhere in the code.
 
     <details>
     <summary>Reveal</summary>
-    
-    > 3
+
+    > At the start of the program
 
     The first line of every `.go` file that is not a blank line or a comment must be a `package` statement to declare the package that the code belongs to.
 
     </details>
-    
     </details>
 
 1.  <details>
@@ -92,53 +98,52 @@ Help for the [VSCode editor](https://github.com/kodekloudhub/community-faq/blob/
 
     If we wanted to import the `fmt` package, which is the correct syntax?
 
-    1. `import fmt`
-    1. `import (fmt)`
-    1. `import "fmt"`
-    1. `"import fmt"`
+    * `import fmt`
+    * `import (fmt)`
+    * `import "fmt"`
+    * `"import fmt"`
 
     <details>
     <summary>Reveal</summary>
-    
-    > 3
+
+    > `import "fmt"`
 
     `import` is a keyword so must not be enclosed within quotes. The name of the package must be quoted.
 
     </details>
-    
     </details>
 
 1.  <details>
     <summary>What is the entry point in a Go program?</summary>
 
-    1. The function that's decalred last
-    1. The `main` function
-    1. Function imported by `fmt` package
-    1. The function that's declared first
+    * The function that's decalred last
+    * The `main` function
+    * Function imported by `fmt` package
+    * The function that's declared first
 
     <details>
     <summary>Reveal</summary>
-    
-    > 2
+
+    > The `main` function
 
     The go runtime looks for a function called `main` and calls it. That's how the program starts. This is taken from the venerable C language!
 
     </details>
-    
+
     </details>
 
 1.  <details>
     <summary>Which package consists of <b>main()</b> function ?</summary>
 
-    1. independent of package name
-    1. package `main`
-    1. we can create our own main function, no package needs to be imported
-    1. package `greetings`
+    * independent of package name
+    * package `main`
+    * we can create our own main function, no package needs to be imported
+    * package `greetings`
 
     <details>
     <summary>Reveal</summary>
-    
-    > 2
+
+    > package `main`
 
     By convention, you create the `main` package first, and put the `main()` function in it:
 
@@ -153,21 +158,20 @@ Help for the [VSCode editor](https://github.com/kodekloudhub/community-faq/blob/
     ```
 
     </details>
-    
     </details>
 
 1.  <details>
     <summary>Our program began with package main, what would the files in the fmt package begin with?</summary>
 
-    1. `package os`
-    1. `package fmt`
-    1. `pacakge object`
-    1. `package main`
+    * `package os`
+    * `package fmt`
+    * `pacakge object`
+    * `package main`
 
     <details>
     <summary>Reveal</summary>
-    
-    > 2
+
+    > `package fmt`
 
     `fmt` is a package, which is meant to be imported by other programs. Here's a snippet of one of the files from this package:
 
@@ -195,21 +199,42 @@ Help for the [VSCode editor](https://github.com/kodekloudhub/community-faq/blob/
     ```
 
     </details>
-    
     </details>
-    
+
 1.  <details>
     <summary>Choose the correct syntax to write a comment in Go</summary>
 
+    1.  ```python
+        # this is a comment
+        ```
+
+    1.  ```go
+        // this is a comment
+        ```
+
+    1.  ```go
+        /*
+        this is
+        a multiline
+        comment
+        */
+        ```
+
+    1.  ```python
+        """
+        this is
+        a multiline
+        comment
+        """
+
     <details>
     <summary>Reveal</summary>
-    
+
     > B, C
 
-    The other two commenting syles are those of Python.
+    The other two commenting styles are those of Python.
 
     </details>
-    
     </details>
 
 1.  <details>
@@ -221,27 +246,28 @@ Help for the [VSCode editor](https://github.com/kodekloudhub/community-faq/blob/
     go version
     ```
 
+    Select the appropriate answer.
+
 1.  <details>
     <summary>Which of the following commands is not valid?</summary>
 
     If unsure, run `go help` and check out the commands and their uses.
 
-    1. go version
-    1. go run
-    1. go compile
-    1. go generate
+    * go version
+    * go run
+    * go compile
+    * go generate
 
     <details>
     <summary>Reveal</summary>
-    
-    > 3
+
+    > go compile
 
     This is not valid, because the command to compile without running is `go build`.
 
     </details>
-    
     </details>
-   
+
 1.  <details>
     <summary>A simple go program has been created for you at the location /root/code/simple-project. However, there is an error in the code.</summary>
 
@@ -254,7 +280,7 @@ Help for the [VSCode editor](https://github.com/kodekloudhub/community-faq/blob/
 
     <details>
     <summary>Reveal</summary>
-    
+
     > Packages imported with the `import` statement must have the package name in double-quotes.
 
     Fix the import statement thus:
@@ -264,7 +290,6 @@ Help for the [VSCode editor](https://github.com/kodekloudhub/community-faq/blob/
     ```
 
     </details>
-    
     </details>
 
 
