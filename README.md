@@ -4,13 +4,13 @@ This repo will soon contain all lab walkthroughs for the [golang](https://github
 
 Note:
 
-Due to differences in formatting ordered lists between github snd the labs, please read multiple choice selections in the solutions as follows:
+Due to differences in formatting ordered lists between github and the labs, please read multiple choice selections in the solutions as follows:
 
 * 
-    1. A (1)
-    1. B (2)
-    1. C (3)
-    1. D (4)
+    1. A
+    1. B
+    1. C
+    1. D
 
 
 * 01 - Getting Started
@@ -22,14 +22,14 @@ Due to differences in formatting ordered lists between github snd the labs, plea
     * [Lab: Data types and Variables](./docs/02-data-types-and-variables/04-data-types-and-variables.md)
     * [Lab: Constants](./docs/02-data-types-and-variables/05-constants.md)
 * 03 - Operators and Flow Control
-    * Lab: Comparison Operators
-    * Lab: Arithmetic Operators
-    * Lab: Logical Operators
-    * Lab: Assignment Operators
-    * Lab: Bitwise Operators
-    * Lab: if-else and else if statements
-    * Lab: Switch Statement
-    * Lab: Looping with for
+    * [Lab: Comparison Operators](./docs/03-operators-and-flow-control/01-comparison-operators.md)
+    * [Lab: Arithmetic Operators](./docs/03-operators-and-flow-control/02-arithmetic-operators.md)
+    * [Lab: Logical Operators](./docs/03-operators-and-flow-control/03-logical-operators.md)
+    * [Lab: Assignment Operators](./docs/03-operators-and-flow-control/04-assignment-operators.md)
+    * [Lab: Bitwise Operators](./docs/03-operators-and-flow-control/05-bitwise-operators.md)
+    * [Lab: if-else and else if statements](./docs/03-operators-and-flow-control/06-if-else-and-elseif-statements.md)
+    * [Lab: Switch Statement](./docs/03-operators-and-flow-control/07-switch-statement.md)
+    * [Lab: Looping with for](./docs/03-operators-and-flow-control/08-looping-with-for.md)
 * 04 - Arrays, Slices and Maps
     * Lab: Arrays
     * Lab: Slices
