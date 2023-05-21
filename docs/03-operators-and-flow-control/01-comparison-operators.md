@@ -72,7 +72,7 @@ See also [Comparison Operators](https://go.dev/ref/spec#Comparison_operators) in
 
     > False
 
-    The values of `a` and `b` are equal, therefor `!=` will be false.
+    The values of `a` and `b` are equal, therefore `!=` will be false.
 
     </details>
     </details>

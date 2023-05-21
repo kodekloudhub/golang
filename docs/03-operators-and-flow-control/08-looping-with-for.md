@@ -192,7 +192,7 @@ All the code fragments in this lab are complete mini-programs, so you can paste 
 
     This is very similar to the previous question - it's still a program to print squares, however the for loop finishes early due to the `break` statement when `i` is 3.
 
-    It has already printed the square of 3, thus the output gets as far as 9. But then `i == 3` is `true` and the `break` within the `if` block is executed. `break` moves control to whatever follows the `}` of th for loop - in this case the end of the program.
+    It has already printed the square of 3, thus the output gets as far as 9. But then `i == 3` is `true` and the `break` within the `if` block is executed. `break` moves control to whatever follows the `}` of the for loop - in this case the end of the program.
 
     </details>
     </details>

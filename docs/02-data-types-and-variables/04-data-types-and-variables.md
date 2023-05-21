@@ -7,8 +7,6 @@ Help for the [VSCode editor](https://github.com/kodekloudhub/community-faq/blob/
 1.  <details>
     <summary>Which of the following methods is used to take input from user?</summary>
 
-    Note that these answers may be in a different order each time you load the lab.
-
     1. `fmt.Scanf`
     1. `fmt.Printf`
     1. `fmt.Scan`
@@ -17,7 +15,7 @@ Help for the [VSCode editor](https://github.com/kodekloudhub/community-faq/blob/
     <details>
     <summary>Reveal</summary>
 
-    > 1
+    > `fmt.Scanf`
 
     Any `Print` function outputs to the console, rather than inputs anything.
 
@@ -37,11 +35,11 @@ Help for the [VSCode editor](https://github.com/kodekloudhub/community-faq/blob/
     <details>
     <summary>Reveal</summary>
 
-    > 1, 3 (A, C)
+    > A, C
 
     `Scanf` is an example of a function that returns more than one value. Many functions in Go return a value and an error. If the error is `nil` then the other return value is the actual value you want and is valid.
 
-    The wording of answer 3 is a little misleading. It is actually the error thrown during execution of `Scanf` itself, if an error occurred. A likely error is if you expected to scan a number and text was entered.
+    The wording of answer 3 is a little misleading. It is actually the error rasied during execution of `Scanf` itself, if an error occurred. A likely error is if you expected to scan a number and text was entered.
 
     </details>
     </details>
@@ -49,8 +47,7 @@ Help for the [VSCode editor](https://github.com/kodekloudhub/community-faq/blob/
 1.  <details>
     <summary>From the following code snippets - select the correct one that takes in multiple inputs and is syntactically correct</summary>
 
-    1.
-        ```go
+    1.  ```go
         var name string
         var b bool
 
@@ -59,8 +56,7 @@ Help for the [VSCode editor](https://github.com/kodekloudhub/community-faq/blob/
         ```
 
 
-    1.
-        ```go
+    1.  ```go
         var name string
         var b bool
 
@@ -68,16 +64,14 @@ Help for the [VSCode editor](https://github.com/kodekloudhub/community-faq/blob/
         fmt.Scanf("t", b)
         ```
 
-    1.
-        ```go
+    1.  ```go
         var name string
         var b bool
 
         fmt.Scanf("%s %t", &name, &b)
         ```
 
-    1.
-        ```go
+    1.  ```go
         var name string
         var b bool
 
@@ -87,7 +81,7 @@ Help for the [VSCode editor](https://github.com/kodekloudhub/community-faq/blob/
     <details>
     <summary>Reveal</summary>
 
-    > 1, 3 (A, C)
+    > A, C
 
     The format specifier for string is `%s` and for bool is `%t`. Thus B and D are incorrect due to incorrect (`%d`) or invalid (`t`) format specifiers.
 
@@ -126,7 +120,7 @@ Help for the [VSCode editor](https://github.com/kodekloudhub/community-faq/blob/
      <details>
     <summary>Reveal</summary>
 
-    > 3 (C)
+    > C
 
     Know that `%T` is the correct format specifier for printing the type of a varaible.
 
@@ -138,7 +132,7 @@ Help for the [VSCode editor](https://github.com/kodekloudhub/community-faq/blob/
     </details>
 
 1.  <details>
-    <summary>The function TypeOf() - used for determining data type of a variable belongs to which package</summary>
+    <summary>The function <b>TypeOf()</b?> - used for determining data type of a variable belongs to which package</summary>
 
     <details>
     <summary>Reveal</summary>
@@ -151,9 +145,7 @@ Help for the [VSCode editor](https://github.com/kodekloudhub/community-faq/blob/
     </details>
 
 1.  <details>
-    <summary>We can use reflect.TypeOf() to determine type of a</summary>
-
-    Note that these answers may be in a different order each time you load the lab.
+    <summary>We can use <b>reflect.TypeOf()</b> to determine type of a</summary>
 
     * A variable
     * A literal
@@ -170,8 +162,6 @@ Help for the [VSCode editor](https://github.com/kodekloudhub/community-faq/blob/
 
 1.  <details>
     <summary>What is Type casting</summary>
-
-    Note that these answers may be in a different order each time you load the lab.
 
     * The process of intialising a variable of a certain data type with a value
     * The process of declaring a variable with a datatype

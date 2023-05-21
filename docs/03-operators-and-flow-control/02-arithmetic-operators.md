@@ -173,7 +173,7 @@ All the code fragments in this lab are complete mini-programs, so you can paste 
 
     The first operation is a straight division of two floats, so it will produce a float result.
 
-    In the second operation, the flosts are first casted to ints so the values become `24` and `3`. Then a modulo division is performed `%`. Modulo yields the *remainder* when the value on the left is divided by the value on the right. Remember from elementary level maths - 24 divided by 3 = 8 *remainder 0*.
+    In the second operation, the floats are first casted to ints so the values become `24` and `3`. Then a modulo division is performed `%`. Modulo yields the *remainder* when the value on the left is divided by the value on the right. Remember from elementary level maths - 24 divided by 3 = 8 *remainder 0*.
     </details>
     </details>
 
