@@ -41,8 +41,8 @@ Help for the [VSCode editor](https://github.com/kodekloudhub/community-faq/blob/
 
     Golang has two float types:
 
-    * `float32`, known as single precision stores floating point values of 7 significant figures with a range of approx. +/-10<sup>+/-38</sup>
-    * `float32`, known as double precision stores floating point values of 15 significant figures with a range of approx. +/10<sup>+/-308</sup>
+    * `float32`, known as [single precision](https://en.wikipedia.org/wiki/Single-precision_floating-point_format) stores floating point values of 7 significant figures with a range of approx. ±10<sup>±38</sup>
+    * `float32`, known as [double precision](https://en.wikipedia.org/wiki/Double-precision_floating-point_format) stores floating point values of 15 significant figures with a range of approx. ±10<sup>±308</sup>
 
     The other two answers are not valid Go types.
 

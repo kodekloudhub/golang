@@ -31,10 +31,10 @@ Due to differences in formatting ordered lists between github and the labs, plea
     * [Lab: Switch Statement](./docs/03-operators-and-flow-control/07-switch-statement.md)
     * [Lab: Looping with for](./docs/03-operators-and-flow-control/08-looping-with-for.md)
 * 04 - Arrays, Slices and Maps
-    * Lab: Arrays
-    * Lab: Slices
-    * Lab: Maps
-    * Lab: Arrays, Slices and Maps
+    * [Lab: Arrays](./docs/04-arrays-slices-and-maps/01-arrays.md)
+    * [Lab: Slices](./docs/04-arrays-slices-and-maps/02-slices.md)
+    * [Lab: Maps](./docs/04-arrays-slices-and-maps/03-maps.md)
+    * [Lab: Arrays, Slices and Maps](./docs/04-arrays-slices-and-maps/04-arrays-slices-and-maps.md)
 * 05 - Using Functions
     * Lab: Function Syntax
     * Lab: Return Types - Multiple, Named, Variadic
