@@ -16,7 +16,7 @@ All the code fragments in this lab are complete mini-programs, so you can paste 
 
 </details>
 
-Before we start, a frequently asked question on Slack and the forums is about slice capacity when a slice grows: "I thought that the capacity always doubles when a slice grows". The answer to that is *usually*, not always. It depends on the length of the intial slice, how much data is being appended, and how big the capacity is at the time it is grown. If it always doubled, you could run out of memory very quickly! The code for growing a slice is [here](https://github.com/golang/go/blob/master/src/runtime/slice.go#L157), but it's very complicated!
+Before we start, a frequently asked question on Slack and the forums is about slice capacity when a slice grows: "I thought that the capacity always doubles when a slice grows". The answer to that is *usually*, not *always*. It depends on the length of the intial slice, how much data is being appended, and how big the capacity is at the time it is grown. If it always doubled, you could run out of memory very quickly! The code for growing a slice is [here](https://github.com/golang/go/blob/master/src/runtime/slice.go#L157), but it's very complicated!
 
 ### Questions
 
@@ -187,7 +187,7 @@ Before we start, a frequently asked question on Slack and the forums is about sl
 
     > 5<br/>5
 
-    * The cpacity of the slice begins as 5 since we are overlaying the `[5]int` array.
+    * The capacity of the slice begins as 5 since we are overlaying the `[5]int` array.
     * Appending two more values isn't going to exceed the capacity of 5
 
     </details>

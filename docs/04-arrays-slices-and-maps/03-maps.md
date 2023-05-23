@@ -107,7 +107,9 @@ All the code fragments in this lab are complete mini-programs, so you can paste 
 
     > No output
 
-    * Key B was indeed not found, therefore the varialbe `found` is `false`. The logic to get to the `Println` requires `found` to be true.
+    * Key B was indeed not found, therefore the variable `found` is `false`. The logic to get to the `Println` requires `found` to be true.
+
+    Note that this is a contrived example. In reality such code would be a developer bug!
 
     </details>
     </details>
