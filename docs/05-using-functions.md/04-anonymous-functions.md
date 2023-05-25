@@ -182,7 +182,7 @@ Help for the [VSCode editor](https://github.com/kodekloudhub/community-faq/blob/
 
     Note the use of `strconv.Itoa`. To build this program requires the additional import of `"strconv"`. Recall from earlier labs that `Itoa` converts an integer to its string representation.
 
-    * `cube` is decalred as a package variable that holds an anonymous function that takes `int` and returns `string`
+    * `cube` is declared as a package variable that holds an anonymous function that takes `int` and returns `string`
     * The function computes the cube of `i`, converts that to a string and returns it.
     * In `main()` variable `x` is assigned the value returned by calling `cube` with 8.
     * Finally print the type and value of `x`. `x` is the value returned by `cube`, not `cube` itself, therefore its type is `string`. The value of `x` is the string "512" so that's just printed. It's all on the same line since it's a single `Printf` with no newline character in it.

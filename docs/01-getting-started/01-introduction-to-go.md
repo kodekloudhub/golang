@@ -116,7 +116,7 @@ Help for the [VSCode editor](https://github.com/kodekloudhub/community-faq/blob/
 1.  <details>
     <summary>What is the entry point in a Go program?</summary>
 
-    * The function that's decalred last
+    * The function that's declared last
     * The `main` function
     * Function imported by `fmt` package
     * The function that's declared first

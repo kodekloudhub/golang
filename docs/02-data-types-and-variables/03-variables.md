@@ -217,7 +217,7 @@ Help for the [VSCode editor](https://github.com/kodekloudhub/community-faq/blob/
 
     > Line 11
 
-    Variable `c` is decalred in an inner block. Line 11 is trying to use `c` from an outer block, which as we discovered in Q7 is illegal.
+    Variable `c` is declared in an inner block. Line 11 is trying to use `c` from an outer block, which as we discovered in Q7 is illegal.
 
     </details>
     </details>
