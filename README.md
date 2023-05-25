@@ -6,8 +6,7 @@ Note:
 
 Due to differences in formatting ordered lists between github and the labs, please read multiple choice selections in the solutions as follows:
 
-* 
-    1. A
+*   1. A
     1. B
     1. C
     1. D
@@ -36,12 +35,12 @@ Due to differences in formatting ordered lists between github and the labs, plea
     * [Lab: Maps](./docs/04-arrays-slices-and-maps/03-maps.md)
     * [Lab: Arrays, Slices and Maps](./docs/04-arrays-slices-and-maps/04-arrays-slices-and-maps.md)
 * 05 - Using Functions
-    * Lab: Function Syntax
-    * Lab: Return Types - Multiple, Named, Variadic
-    * Lab: Recursive Functions
-    * Lab: Anonymous Functions
-    * Lab: High Order Functions
-    * Lab: Functions
+    * [Lab: Function Syntax](./docs/05-using-functions.md/01-function-syntax.md)
+    * [Lab: Return Types - Multiple, Named, Variadic](./docs/05-using-functions.md/02-return-types-multiple-named-variadic.md)
+    * [Lab: Recursive Functions](./docs/05-using-functions.md/03-recursive-functions.md)
+    * [Lab: Anonymous Functions](./docs/05-using-functions.md/04-anonymous-functions.md)
+    * [Lab: High Order Functions](./docs/05-using-functions.md/05-high-order-functions.md)
+    * [Lab: Functions](./docs/05-using-functions.md/06-functions.md)
 * 06 - Pointers
     * Lab: Pointers
     * Lab: Pointer in Functions
