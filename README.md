@@ -42,8 +42,8 @@ Due to differences in formatting ordered lists between github and the labs, plea
     * [Lab: High Order Functions](./docs/05-using-functions.md/05-high-order-functions.md)
     * [Lab: Functions](./docs/05-using-functions.md/06-functions.md)
 * 06 - Pointers
-    * Lab: Pointers
-    * Lab: Pointer in Functions
+    * [Lab: Pointers](./docs/06-pointers/01-pointers.md)
+    * [Lab: Pointers in Functions](./docs/06-pointers/02-pointers-in-functions.md)
 * 07 - Struct, Methods and Interfaces
     * Lab: Struct
     * Lab: Struct and Methods
