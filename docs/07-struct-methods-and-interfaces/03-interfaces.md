@@ -38,7 +38,7 @@ Help for the [VSCode editor](https://github.com/kodekloudhub/community-faq/blob/
 
     > B, C
 
-    * A is incorrect because interfaces coannot have fields, only methods.
+    * A is incorrect because interfaces cannot have fields, only methods.
     * D is incorrect because the `func` keyword is not used on interface method declarations.
 
     </details>
@@ -89,9 +89,9 @@ Help for the [VSCode editor](https://github.com/kodekloudhub/community-faq/blob/
 
     > Error
 
-    There is a bug in this program. It will fail to compile due to the last line which will produce the error `Undergrad does not implement Student (missing getName method)`
-
-    `Undergrad` has a receiver for `getPercentage` but not for `getName` therefore it is an incomplete implementation of the interface `Student`
+    * There is a bug in this program. It will fail to compile due to the last line which will produce the error `Undergrad does not implement Student (missing getName method)`
+    * When a struct value is passed as an argument to a function that has an interface parameter, the struct's implementation will be checked by the compiler.
+    * `Undergrad` has a receiver for `getPercentage` but not for `getName` therefore it is an incomplete implementation of the interface `Student`.
 
     </details>
     </details>
@@ -145,7 +145,7 @@ Help for the [VSCode editor](https://github.com/kodekloudhub/community-faq/blob/
 
     > Ross<br/>81
 
-    * The bug from Q1 has been fixed. An implementation has been provided for `getName`, so no error.
+    * The bug from Q2 has been fixed. An implementation has been provided for `getName`, so no error.
     * `No output` is incorrect because the two `Println` statements in the `printData` function will be executed.
     * While we're there, note that the name will be printed first, so that eliminates another answer.
     * Finally, `getPercentage` calculates the average of all the grades in the `grades` slice. The calculation is using integer math, hence `81`. No percent sign is printed.

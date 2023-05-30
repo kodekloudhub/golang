@@ -181,7 +181,7 @@ Methods are special functions that operate on structs or pointers to structs The
     * We can also rule out any answer that does not include two values in each `{}` since both fields are `int` and `int` always has a printable value, even if it's zero.
     * This leaves only one answer. The reason it has the values it does, is because we initialize each value in the struct without giving the field names, so the values are applied in order: `eid` first, then `id`. The `eid` values will go from zero to 4, and the `id` being `i+10` will go from 10 to 14.
 
-    It is however good aractice to use field names when initializing a struct since it makes the code easier to read.
+    It is however good practice to use field names when initializing a struct since it makes the code easier to read.
 
     </details>
     </details>
