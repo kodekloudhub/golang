@@ -1,6 +1,6 @@
 # golang
 
-This repo will soon contain all lab walkthroughs for the [golang](https://github.com/kodekloudhub/golang.git) course.
+This repo contains all lab walkthroughs for the [golang](https://kodekloud.com/courses/golang/) course.
 
 Note:
 
@@ -45,10 +45,6 @@ Due to differences in formatting ordered lists between github and the labs, plea
     * [Lab: Pointers](./docs/06-pointers/01-pointers.md)
     * [Lab: Pointers in Functions](./docs/06-pointers/02-pointers-in-functions.md)
 * 07 - Struct, Methods and Interfaces
-    * Lab: Struct
-    * Lab: Struct and Methods
-    * Lab: Interfaces
-
-
-
-
+    * [Lab: Struct](./docs/07-struct-methods-and-interfaces/01-struct.md)
+    * [Lab: Struct and Methods](./docs/07-struct-methods-and-interfaces/02-struct-and-methods.md)
+    * [Lab: Interfaces](./docs/07-struct-methods-and-interfaces/03-interfaces.md)
