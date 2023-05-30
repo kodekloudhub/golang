@@ -4,7 +4,7 @@
 
 Help for the [VSCode editor](https://github.com/kodekloudhub/community-faq/blob/main/docs/vscode-tips.md).
 
-Methods are special functions that operate on structs or pointers to structs They are also known as `receivers`. This, along with interfaces is as close as Go gets to Object Oriented Programming (OOP).
+Methods are special functions that operate on structs or pointers to structs. They are also known as `receivers`. This, along with interfaces is as close as Go gets to Object Oriented Programming (OOP).
 
 1.  <details>
     <summary>What would be the output of the following program?</summary>
