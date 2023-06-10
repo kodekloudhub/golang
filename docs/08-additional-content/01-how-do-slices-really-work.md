@@ -109,7 +109,7 @@ func make(typ slicetype, lenAndCap ...int) slice {
 In the above, note:
 
 * `slicetype`, e.g. `[]int` - from this `make` works out how much memory to allocate.
-* The pseudo-function `sizeof` determines how many bytes are required to store e.g. a single element of the type contained in the slice e.g. `int`, which on modern computers is 8 bytes. Multiply that by the requested capacity to get the total number of bytes required to hold the slice.
+* The pseudo-function `sizeof` determines how many bytes are required to store a single element of the type contained in the slice e.g. `int`, which on modern computers is 8 bytes. Multiply that by the requested capacity to get the total number of bytes required to hold the slice.
 * The pseudo-function `alloc` allocates the requested number of bytes of memory from the global heap and returns a pointer to that memory.
 
 You can see a slice header like this
@@ -232,8 +232,8 @@ package main
 import "fmt"
 
 func modify(slc []int) {
-	// Grow the slice
 	slc2 := []int{4, 5, 6, 7, 8, 9}
+	// Grow the slice
 	slc = append(slc, slc2...)
 	// Now modify first element
 	slc[0] = 100
