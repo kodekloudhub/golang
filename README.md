@@ -48,3 +48,7 @@ Due to differences in formatting ordered lists between github and the labs, plea
     * [Lab: Struct](./docs/07-struct-methods-and-interfaces/01-struct.md)
     * [Lab: Struct and Methods](./docs/07-struct-methods-and-interfaces/02-struct-and-methods.md)
     * [Lab: Interfaces](./docs/07-struct-methods-and-interfaces/03-interfaces.md)
+
+# Bonus Content
+
+* [How do slices really work?](./docs/08-additional-content/01-how-do-slices-really-work.md)
