@@ -2,14 +2,14 @@
 
 Now that you have reached the end of the course and learned about arrays, slices, structs and pointers, we can take a deep dive into the mechanics of what makes a slice work under the hood. Hopefully this covers all the questions raised on the KodeKloud forums about slices.
 
+In some of the code examples below, it is stated "pseudo-code". For those that haven't come across this term, pseudo-code shows a description of the logic that would happen in the *real* code, some of which in these cases would have been written in assembly language rather than pure Go in the Go runtime, for speed."pseudo-function" indicates a made up function call representative of what is actually happening under the hood.
+
 * [Refresher](#refresher)
 * [Slice Representation](#slice-representation)
 * [Slicing arrays and other slices](#slicing-arrays-and-other-slices)
 * [Growing Slices](#growing-slices)
 
 ## Refresher
-
-In some of the code examples below, it is stated "pseudo-code". For those that haven't come across this term, pseudo-code shows a description of the logic that would happen in the *real* code, some of which in these cases would have been written in assembly language rather than pure Go in the Go runtime, for speed."pseudo-function" indicates a made up function call representative of what is actually happening under the hood.
 
 You've learned that an array is passed by value. This means that if you pass an array as a function argument, changing the array from inside the function has no effect on the caller's array, since the function gets a complete copy of the *entire* array...
 
