@@ -2,7 +2,7 @@
 
 Now that you have reached the end of the course and learned about arrays, slices, structs and pointers, we can take a deep dive into the mechanics of what makes a slice work under the hood. Hopefully this covers all the questions raised on the KodeKloud forums about slices.
 
-In some of the code examples below, it is stated "pseudo-code". For those that haven't come across this term, pseudo-code shows a description of the logic that would happen in the *real* code, some of which in these cases would have been written in assembly language rather than pure Go in the Go runtime, for speed."pseudo-function" indicates a made up function call representative of what is actually happening under the hood.
+In some of the code examples below, it is stated "pseudo-code". For those that haven't come across this term, pseudo-code shows a description of the logic that would happen in the *real* code, some of which in these cases would have been written in assembly language rather than pure Go in the Go runtime, for speed."pseudo-function" indicates a made up function call representative of what is actually happening under the hood. Don't try running any of the pseudo-code, it won't work! It serves only as an illustration. Any example complete with `package` and `import` will run.
 
 * [Refresher](#refresher)
 * [Slice Representation](#slice-representation)
@@ -14,6 +14,10 @@ In some of the code examples below, it is stated "pseudo-code". For those that h
 You've learned that an array is passed by value. This means that if you pass an array as a function argument, changing the array from inside the function has no effect on the caller's array, since the function gets a complete copy of the *entire* array...
 
 ```go
+package main
+
+import "fmt"
+
 func modify([3]int arr) {
     arr[0] = 100
 }
@@ -34,6 +38,10 @@ This yields
 You've also learned that a slice is passed "by reference" (in quotes for reasons that will become clear shortly!). This means that if you pass the slice as a function parameter then changing the slice from inside the function *does* affect the caller's slice (most of the time :smile: - we will see when this is *not* the case later)...
 
 ```go
+package main
+
+import "fmt"
+
 func modify([]int arr) {
     arr[0] = 100
 }
