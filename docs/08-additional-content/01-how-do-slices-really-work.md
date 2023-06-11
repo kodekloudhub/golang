@@ -95,10 +95,10 @@ func cap(sh slice) {
 }
 ```
 
-And `make` is a bit like this.
+And `make` is a bit like this. The compiler automatically adjusts the `make` call for the type being stored in the slice, so for `[]int` it would be similar to
 
 ```go
-func make(typ slicetype, lenAndCap ...int) slice {
+func make([]int, lenAndCap ...int) slice {
     length = lenAndCap[0]
     if len(lenAndCap) > 1 {
         capacity = lenAndCap[1]
@@ -107,7 +107,7 @@ func make(typ slicetype, lenAndCap ...int) slice {
     }
 
     return slice {
-        array: alloc(capacity * sizeof(typ)),
+        array: alloc(capacity * sizeof(int)),
         len:   length,
         cap:   capacity,
     }
@@ -116,7 +116,6 @@ func make(typ slicetype, lenAndCap ...int) slice {
 
 In the above, note:
 
-* `slicetype`, e.g. `[]int` - from this `make` works out how much memory to allocate.
 * The pseudo-function `sizeof` determines how many bytes are required to store a single element of the type contained in the slice e.g. `int`, which on modern computers is 8 bytes. Multiply that by the requested capacity to get the total number of bytes required to hold the slice.
 * The pseudo-function `alloc` allocates the requested number of bytes of memory from the global heap and returns a pointer to that memory.
 
