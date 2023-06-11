@@ -67,7 +67,7 @@ type slice struct {
 
 So, the reason a slice argument acts as though passed by reference is the pointer member of the above struct. Even though the slice header is passed by value (meaning *a copy* of the slice header is received by the `modify` function), the pointer `array` is still the same value, meaning it is pointing to the *same* block of memory that `main` is seeing. Thus when you modify a value in the slice, the caller will see the modification.
 
-A note about `unsafe` - The `unsafe` package contains methods and types that circumvent the type safety of Go, so should be used with caution!. In the `slice` struct above, `unsafe.Pointer` is used because it can point to *anything* - `int`, `string`, `float32`, an instance of your custom struct - literally anything.
+A note about `unsafe` - The `unsafe` package contains methods and types that circumvent the type safety of Go, so should be used with caution! In the `slice` struct above, `unsafe.Pointer` is used because it can point to *anything* - `int`, `string`, `float32`, an instance of your custom struct - literally anything.
 
 Now let's talk a little more on the functions we can use with slices, with respect to what we have just learned about the representation of a slice using some pseudo-code.
 
@@ -166,7 +166,7 @@ For an array:
 
 ```go
 // Compiler generated makeSlice function
-func makeSlice(arr *[3]int, start, end) slice {
+func makeSlice(arr *[3]int, start, end int) slice {
     // Remember "arr" is a pointer to the start of the array data
     return slice {
         array: arr + (start * sizeof(int)), // points to the first element in underlying array as specified by "start"
@@ -187,7 +187,7 @@ For another slice:
 
 ```go
 // Compiler generated makeSlice function
-func makeSlice(slc []int, start, end) slice {
+func makeSlice(slc []int, start, end int) slice {
     sh := getSliceHeader(slc)
     return slice {
         array: sh.array + (start * sizeof(int)), // points to the first element in underlying slice as specified by "start"
@@ -209,7 +209,7 @@ func main() {
 A slice grows when its *capacity* is exceeded by appending more elements than capacity permits. The pseudo-code for `append` looks something like this
 
 ```go
-func append(slc []typ, appendedItems ...type) slc[]typ {
+func append(slc []typ, appendedItems ...typ) []typ {
     // Intially return the slice passed as an argument
     returnSlice := slc
 
@@ -251,7 +251,7 @@ This time the output is:
 [1 2 3]
 ```
 
-That's because a grow happened in the `modify` function, which caused a *copy* to be made of the original data, so when `slc[0] = 100` happens, it's now modifying a copy, not the original data therefore it's as if we had passed an array and not a slice!
+That's because a grow happened in the `modify` function, which caused a *copy* to be made of the original data, so when `slc[0] = 100` happens, it's now modifying a copy, not the original data therefore it's as if we had passed an array and not a slice! This is also why you should always assign the result of `append` back to the slice you are appending to, in case the slice is reallocated.
 
 Next, let's discuss what happens when a slice grows. The general rule of thumb is that the capacity is doubled, but this is not always the case! The algorithm for growing a slice is fairly complex and takes several factors into consideration when deciding how much extra capacity should be added. One such consideration is that when the slices get to a certain size, the capacity increase factor drops from 2 to 1.25 or you would soon run out of memory! There are other considerations for the size of the element stored in the slice, and the machine architecture. The code for growing a slice can be [found here](https://go.dev/src/runtime/slice.go) beginning at line 157.
 
