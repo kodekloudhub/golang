@@ -232,17 +232,17 @@ package main
 import "fmt"
 
 func modify(slc []int) {
-	slc2 := []int{4, 5, 6, 7, 8, 9}
-	// Grow the slice
-	slc = append(slc, slc2...)
-	// Now modify first element
-	slc[0] = 100
+    slc2 := []int{4, 5, 6, 7, 8, 9}
+    // Grow the slice
+    slc = append(slc, slc2...)
+    // Now modify first element
+    slc[0] = 100
 }
 
 func main() {
-	slc := []int{1, 2, 3}
+    slc := []int{1, 2, 3}
     modify(slc)
-	fmt.Println(slc)
+    fmt.Println(slc)
 }
 ```
 
