@@ -114,6 +114,31 @@ func make([]int, lenAndCap ...int) slice {
 }
 ```
 
+For a custom struct
+
+```go
+
+type myStruct struct {
+    a int
+    b int
+}
+
+func make([]myStruct, lenAndCap ...int) slice {
+    length = lenAndCap[0]
+    if len(lenAndCap) > 1 {
+        capacity = lenAndCap[1]
+    } else {
+        capacity = length
+    }
+
+    return slice {
+        array: alloc(capacity * sizeof(myStruct)),
+        len:   length,
+        cap:   capacity,
+    }
+}
+```
+
 In the above, note:
 
 * The pseudo-function `sizeof` determines how many bytes are required to store a single element of the type contained in the slice e.g. `int`, which on modern computers is 8 bytes. Multiply that by the requested capacity to get the total number of bytes required to hold the slice.
