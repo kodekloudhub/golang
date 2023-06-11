@@ -166,7 +166,7 @@ For an array:
 
 ```go
 // Compiler generated makeSlice function
-func makeSlice(arr *[3]int, start, end int) slice {
+func makeSlice(arr *[3]int, start, end int) []int {
     // Remember "arr" is a pointer to the start of the array data
     return slice {
         array: arr + (start * sizeof(int)), // points to the first element in underlying array as specified by "start"
@@ -187,8 +187,9 @@ For another slice:
 
 ```go
 // Compiler generated makeSlice function
-func makeSlice(slc []int, start, end int) slice {
-    sh := getSliceHeader(slc)
+func makeSlice(slc []int, start, end int) []int {
+    // get slice header for slc
+    sh := (*reflect.slice)(unsafe.Pointer(&slc))
     return slice {
         array: sh.array + (start * sizeof(int)), // points to the first element in underlying slice as specified by "start"
         len: end - start,
