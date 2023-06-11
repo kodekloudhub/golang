@@ -241,6 +241,7 @@ func modify(slc []int) {
 
 func main() {
 	slc := []int{1, 2, 3}
+    modify(slc)
 	fmt.Println(slc)
 }
 ```
