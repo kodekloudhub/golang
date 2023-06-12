@@ -181,7 +181,6 @@ func main() {
 	arr := [3]int{1, 2, 3}
 	slc := arr[:]
 	slc[0] = 100
-	//modify(slc)
 	fmt.Println(arr)
 }
 ```
