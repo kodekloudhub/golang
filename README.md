@@ -2,6 +2,8 @@
 
 This repo contains all lab walkthroughs for the [golang](https://kodekloud.com/courses/golang/) course.
 
+For the Advanced golang solutions, go [here](https://github.com/kodekloudhub/advanced-golang).
+
 Note:
 
 Due to differences in formatting ordered lists between github and the labs, please read multiple choice selections in the solutions as follows:
