@@ -64,7 +64,7 @@ Help for the [VSCode editor](https://github.com/kodekloudhub/community-faq/blob/
 
     > A, C, D
 
-    B is incorrect becaose a `const` must be assigned a value when it is declared, not in a separate statement.
+    B is incorrect because a `const` must be assigned a value when it is declared, not in a separate statement.
 
     </details>
     </details>
