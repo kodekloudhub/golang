@@ -122,7 +122,7 @@ Help for the [VSCode editor](https://github.com/kodekloudhub/community-faq/blob/
 
     > C
 
-    Know that `%T` is the correct format specifier for printing the type of a varaible.
+    Know that `%T` is the correct format specifier for printing the type of a variable.
 
     `type()` is not a valid built-in function.
 
